@@ -50,8 +50,6 @@
         COMBO(TAB, 2 3)
         COMBO(MINUS, 4 5)
         COMBO(BSPC, 9 10)
-        COMBO(LPAR, 16 17)
-        COMBO(RPAR, 18 19)
         COMBO(SCLN, 18 19)
     };
 

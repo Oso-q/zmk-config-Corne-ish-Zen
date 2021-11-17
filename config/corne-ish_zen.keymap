@@ -52,7 +52,7 @@
         COMBO(BSPC, 9 10)
         COMBO(LPAR, 16 17)
         COMBO(RPAR, 18 19)
-        COMBO(DELETE, 8 9)
+        COMBO(DEL, 8 9)
         COMBO(SCLN, 18 19)
     };
 

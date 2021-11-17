@@ -53,8 +53,7 @@
         key-positions = <KEYPOS>; \
         bindings = <&kp NAME>; \
     };
-
-/ {
+{
         keymap {
                 compatible = "zmk,keymap";
 

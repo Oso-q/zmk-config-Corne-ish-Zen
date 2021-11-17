@@ -34,14 +34,19 @@
     combos {
         compatible = "zmk,combos";
 
+          COMBO(escape, &kp ESCAPE, 3 5)
+          COMBO(backspace, &kp BACKSPACE, 14 15)
+          COMBO(quote, &kp APOSTROPHE, 30 31)
+          COMBO(minus, &kp MINUS, 26 27)
+          COMBO(less, &kp LESS_THAN, 18 19)
+          COMBO(more, &kp GREATER_THAN, 20 21)
+          COMBO(score, &kp UNDER, 31 32)
+          COMBO(slash, &kp BACKSLASH, 9 10)
+          COMBO(btc, &bt BT_CLR, 25 34)
+
+
 };
 
-#define COMBO(NAME, KEYPOS) \
-    combo_##NAME { \
-        timeout-ms = <100>; \
-        key-positions = <KEYPOS>; \
-        bindings = <&kp NAME>; \
-    };
 / {
         keymap {
                 compatible = "zmk,keymap";

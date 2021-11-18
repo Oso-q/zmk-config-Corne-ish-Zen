@@ -30,6 +30,17 @@
         key-positions = <KEYPOS>; \
         bindings = <&kp NAME>; \
     };
+/ {
+    behaviors {
+        i3: behavior_ithree {
+			compatible = "zmk,behavior-hold-tap";
+			label = "I_THREE";
+			flavor = "tap-preferred";
+			tapping-term-ms = <500>;
+            #binding-cells = <2>;
+			bindings = <&kp>, <&kp>;
+		};
+    };
 
     combos {
         compatible = "zmk,combos";

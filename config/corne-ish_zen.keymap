@@ -93,8 +93,8 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
  &kp TAB     &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(Y)                          &trans &trans &trans &trans &trans  &kp BSPC 
-      &kp LCTL  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp PGUP                       &trans  &trans &trans &trans &trans &trans 
-      &trans  &trans  &kp INSERT  &kp HOME  &kp END  &kp PGDOWN                       &trans  &trans &trans &trans &trans  &trans 
+      &kp LCTL  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp PAGE_UP                       &trans  &trans &trans &trans &trans &trans 
+      &trans  &trans  &kp INSERT  &kp HOME  &kp END  &kp PAGE_DOWN                       &trans  &trans &trans &trans &trans  &trans 
                                           &trans  &trans   &trans      &trans &trans &trans                        
         >;
                 };
@@ -107,10 +107,10 @@
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-       &kp TAB  &kp GRAVE  &kp KP_7  &kp KP_8   &kp KP_9  &kp MINUS                       &kp MINUS  &kp AMPERSAND  &kp ASTR  &kp LPRN  &kp RPRN  &kp BSPC 
-      &kp LCTL &kp PIPE  &kp KP_4  &kp KP_5  &kp KP_6  &kp EQUAL                       &kp EQUAL   &kp DOLLAR  &kp PERCENT  &kp CIRCUMFLEX  &kp LEFT_CURLY_BRACE   &kp GRV 
-      &kp LSFT  &kp SLASH  &kp KP_1  &kp KP_2  &kp KP_3  &kp KP_DOT                       &kp SLASH  &kp EXCLAIM  &kp AT  &kp HASH  &kp RIGHT_CURLY_BRACE  &kp TILD 
-                                          &kp KP_0    &trans   &trans      &trans  &trans  &kp RALT 
+       &kp TAB  &kp GRAVE  &kp N7     &kp N8    &kp N9  &kp MINUS                       &kp MINUS  &kp AMPERSAND  &kp &kp ASTRK  &kp LPRN  &kp RPRN  &kp BSPC 
+      &kp LCTL &kp PIPE  &kp N4      &kp N5      &kp N6  &kp EQUAL                       &kp EQUAL   &kp DOLLAR  &kp PERCENT  &kp CARET  &kp LEFT_BRACE   &kp GRV 
+      &kp LSFT  &kp FSLH  &kp N1    &kp N2    &kp N3  &kp KP_DOT                       &kp SLASH  &kp EXCL   &kp AT  &kp HASH  &kp RIGHT_BRACE  &kp TILD 
+                                          &kp N0      &trans   &trans      &trans  &trans  &kp RALT 
                         >;
                 };
 

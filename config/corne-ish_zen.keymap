@@ -94,7 +94,7 @@
                         bindings = <
  &kp TAB     &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(Y)                          &trans &trans &trans &trans &trans  &kp BSPC 
       &kp LCTL  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp PGUP                       &trans  &trans &trans &trans &trans &trans 
-      &kp LSFT  &kp PAUSE  &kp INSERT  &kp HOME  &kp END  &kp PGDOWN                       &trans  &trans &trans &trans &trans  &trans 
+      &trans  &trans  &kp INSERT  &kp HOME  &kp END  &kp PGDOWN                       &trans  &trans &trans &trans &trans  &trans 
                                           &trans  &trans   &trans      &trans &trans &trans                        
         >;
                 };

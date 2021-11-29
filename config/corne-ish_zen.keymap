@@ -10,9 +10,9 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define QWERTY 0
-#define NUMROW 1
-#define ARROWS 2
-#define NUMPAD 3
+#define NAV 1
+#define NUMPAD 2
+#define FUNCTION 3
 
 &mt {
   flavor = "tap-preferred";
@@ -81,46 +81,46 @@
   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &kp ESC &lt 3 A &mt LCTRL S &mt LALT D &mt LSHFT F &kp G   &kp H &mt RSHFT J  &mt RALT K     &mt RCTRL L   &mt RGUI APOSTROPHE  &kp SEMI
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                  &kp ESC &lt 3 TAB  &kp BSPC   &lt 1 SPACE &lt 3 ENTER  &kp DELETE
+                  &kp LCTRL,   LT 1 &kp DELETE,  LT 2 &kp BSPC,     LT 1 &kp SPACE,   LT 3 &kp ENT, &kp LSHIFT
                         >;
                 };
                 numrow_layer {
-                        label = "NUMROW";
+                        label = "NAV";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &trans &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans   &trans &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans
-   &trans &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4            &kp LPAR  &kp RPAR &kp SEMI    &trans &trans
-                          	        &kp LGUI     &trans       &kp SPACE      &trans  &trans   &kp RALT
-                        >;
+ &kp TAB,    &kp LC(Z),    &kp LC(X),    &kp LC(C),    &kp LC(V),    &kp LC(Y),                         &trans,    &kp WH_L,    &kp WH_D,    &kp WH_U,    &kp WH_R, &kp BSPC,
+      &kp LCTL, &kp LEFT, &kp DOWN, &kp UP, &kp RIGHT, &kp PGUP,                      &trans, &kp MS_L,   &kp MS_D,&kp MS_U, &kp MS_R, &trans,
+      &kp LSFT, &kp PAUSE, &kp INSERT, &kp HOME, &kp END, &kp PGDOWN,                      &trans, &kp ACL0, &kp ACL1, &kp ACL2, &kp WH_D, &trans,
+                                          &trans, &trans,  &trans,     &kp BTN3,   &kp BTN1, &kp BTN2                        >;
+        >;
                 };
 
                 arrows_layer {
-                        label = "ARROWS";
+                        label = "NUMPAD";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT     &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &trans &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans          &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans &trans          &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                    	     &kp LGUI &trans &kp SPACE       &kp RET &trans  &kp RALT
+       &kp TAB, &kp GRAVE, &kp KP_7, &kp KP_8,  &kp KP_9, &kp MINUS,                      &kp MINUS, &kp AMPERSAND, &kp ASTR, &kp LPRN, &kp RPRN, &kp BSPC,
+      &kp LCTL,&kp PIPE, &kp KP_4, &kp KP_5, &kp KP_6, &kp EQUAL,                      &kp EQUAL,  &kp DOLLAR, &kp PERCENT, &kp CIRCUMFLEX, &kp LEFT_CURLY_BRACE,  &kp GRV,
+      &kp LSFT, &kp SLASH, &kp KP_1, &kp KP_2, &kp KP_3, &kp KP_DOT,                      &kp SLASH, &kp EXCLAIM, &kp AT, &kp HASH, &kp RIGHT_CURLY_BRACE, &kp TILD,
+                                          &kp KP_0,   &trans,  &trans,     &trans, &trans, &kp RALT
                         >;
                 };
 
                 numpad_layer {
-                        label = "NUMPAD";
+                        label = "FUNCTION";
                         bindings = < 
-   &none &none &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp MINUS         &kp KP_EQUAL    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS &kp BSPC
-   &none &none &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_PLUS           &kp KP_ASTERISK &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_PLUS  &none
-   &none &none &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_SLASH      &kp KP_SLASH    &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_ENTER &none
-                             &kp KP_N0 &kp KP_DOT  &trans       &kp SPC &kp KP_N0 &kp KP_DOT
+        &trans, &kp F9, &kp F10, &kp F11, &kp F12, &kp PSCREEN,                      &trans, &trans, &trans, &trans, &trans, &trans,
+      &trans, &kp F5, &kp F6, &kp F7, &kp F8, &kp SCROLLLOCK,                      &trans, &trans, &trans, &trans, &trans, &trans,
+      &trans, &kp F1, &kp F2, &kp F3, &kp F4, &kp PAUSE,                      &trans, &trans, &trans, &trans, RESET, &trans,
+                                          &trans, &trans,  &trans,     &trans, &trans, &trans
                         >;
                 };
         };

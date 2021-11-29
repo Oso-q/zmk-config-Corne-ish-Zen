@@ -84,7 +84,7 @@
                   &kp LCTRL    &LT 1 DELETE   &LT 2 BSPC      &LT 1 SPACE    &LT 3 ENT  &kp LSHIFT 
                         >;
                 };
-                numrow_layer {
+                nav_layer {
                         label = "NAV";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
@@ -99,7 +99,7 @@
         >;
                 };
 
-                arrows_layer {
+                numpad_layer {
                         label = "NUMPAD";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
@@ -114,7 +114,7 @@
                         >;
                 };
 
-                numpad_layer {
+                function_layer {
                         label = "FUNCTION";
                         bindings = < 
         &trans  &kp F9  &kp F10  &kp F11  &kp F12  &kp PSCREEN                        &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)  &kp LC(Y)  &trans 

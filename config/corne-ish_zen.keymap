@@ -92,10 +92,10 @@
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
- &kp TAB     &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(Y)                          &trans     &kp WH_L     &kp WH_D     &kp WH_U     &kp WH_R  &kp BSPC 
-      &kp LCTL  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp PGUP                       &trans  &kp MS_L    &kp MS_D &kp MS_U  &kp MS_R  &trans 
-      &kp LSFT  &kp PAUSE  &kp INSERT  &kp HOME  &kp END  &kp PGDOWN                       &trans  &kp ACL0  &kp ACL1  &kp ACL2  &kp WH_D  &trans 
-                                          &trans  &trans   &trans      &kp BTN3    &kp BTN1  &kp BTN2                        
+ &kp TAB     &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(Y)                          &trans &trans &trans &trans &trans  &kp BSPC 
+      &kp LCTL  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp PGUP                       &trans  &trans &trans &trans &trans &trans 
+      &kp LSFT  &kp PAUSE  &kp INSERT  &kp HOME  &kp END  &kp PGDOWN                       &trans  &trans &trans &trans &trans  &trans 
+                                          &trans  &trans   &trans      &trans &trans &trans                        
         >;
                 };
 

@@ -81,7 +81,7 @@
   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &kp ESC &kp A &mt LCTRL S &mt LALT D &mt LSHFT F &kp G   &kp H &mt RSHFT J  &mt RALT K     &mt RCTRL L   &mt RGUI APOSTROPHE  &kp SEMI
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                  &kp LCTRL,   LT 1 &kp DELETE,  LT 2 &kp BSPC,     LT 1 &kp SPACE,   LT 3 &kp ENT, &kp LSHIFT
+                  &kp LCTRL,   LT 1 DELETE,  LT 2 BSPC,     LT 1 SPACE,   LT 3 ENT, &kp LSHIFT
                         >;
                 };
                 numrow_layer {
@@ -117,8 +117,8 @@
                 numpad_layer {
                         label = "FUNCTION";
                         bindings = < 
-        &trans, &kp F9, &kp F10, &kp F11, &kp F12, &kp PSCREEN,                      &trans, &kp LC(Z),    &kp LC(X),    &kp LC(C),    &kp LC(V),    &kp LC(Y, &trans,
-      &trans, &kp F5, &kp F6, &kp F7, &kp F8, &kp SCROLLLOCK,                       &kp PGUP, &kp LEFT, &kp DOWN, &kp UP, &kp RIGHT,, &trans,
+        &trans, &kp F9, &kp F10, &kp F11, &kp F12, &kp PSCREEN,                       &kp LC(Z),    &kp LC(X),    &kp LC(C),    &kp LC(V), &kp LC(Y), &trans,
+      &trans, &kp F5, &kp F6, &kp F7, &kp F8, &kp SCROLLLOCK,                       &kp PGUP, &kp LEFT, &kp DOWN, &kp UP, &kp RIGHT, &trans,
       &trans, &kp F1, &kp F2, &kp F3, &kp F4, &kp PAUSE,                      &kp PGDOWN, &kp PAUSE, &kp INSERT, &kp HOME, &kp END, &trans,
                                           &trans, &trans,  &trans,     &trans, &trans, &trans
                         >;

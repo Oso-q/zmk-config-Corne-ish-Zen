@@ -88,8 +88,8 @@ nav_layer {
                         label = "NAV";
 bindings = <
 &trans             &trans             &trans             &to BASE           &trans                &kp INS            &kp HOME           &kp UP             &kp END            &kp PG_UP          \
-&kp LGUI           &kp LALT           &kp LCTRL          &kp LSHFT          &trans                &u_caps_word       &kp LEFT           &kp DOWN           &kp RIGHT          &kp PG_DN          \
-&trans             &kp RALT           &to NUM            &to NAV            &trans                K_REDO              K_PASTE              K_COPY              K_CUT              K_UNDO              \
+&kp LGUI           &kp LALT           &kp LCTRL          &kp LSHFT          &trans                &trans             &kp LEFT           &kp DOWN           &kp RIGHT          &kp PG_DN          \
+&trans             &kp RALT           &to NUM            &to NAV            &trans                &K_REDO            &K_PASTE           &K_COPY            &K_CUT             &K_UNDO              \
                                       &trans             &trans             &trans                &kp RET            &kp BSPC           &kp DEL                                                
         >;
                 };
@@ -108,7 +108,7 @@ bindings = <
                         bindings = < 
 &kp LBRC           &kp AMPS           &kp ASTRK          &kp LPAR           &kp RBRC           &trans                &to BASE           &trans             &trans             &trans         \
 &kp COLON          &kp DLLR           &kp PRCT           &kp CRRT           &kp PLUS           &trans                &kp LSHFT          &kp LCTRL          &kp LALT           &kp LGUI           \
-&kp TILDE          &kp EXCL           &kp AT             &kp HASH           &kp PIPE           &trans                &to SYM            &to U_MOUSE        &kp RALT           &trans                \
+&kp TILDE          &kp EXCL           &kp AT             &kp HASH           &kp PIPE           &trans                &to SYM            &trans             &kp RALT           &trans                \
                                       &kp LPAR           &kp RPAR           &kp UNDER          &trans                &trans             &trans                                          
 
                         >;
@@ -117,9 +117,9 @@ bindings = <
                 function_layer {
                         label = "FUN";
                         bindings = < 
-&kp F12            &kp F7             &kp F8             &kp F9             &kp PSCRN          &trans                &&to BASE          &trans             &trans             &trans         \
+&kp F12            &kp F7             &kp F8             &kp F9             &kp PSCRN          &trans                &to BASE          &trans             &trans             &trans         \
 &kp F11            &kp F4             &kp F5             &kp F6             &kp SLCK           &trans                &kp LSHFT          &kp LCTRL          &kp LALT           &kp LGUI           \
-&kp F10            &kp F1             &kp F2             &kp F3             &kp PAUSE_BREAK    &trans                &to FUN            &to MED        &kp RALT           &trans                \
+&kp F10            &kp F1             &kp F2             &kp F3             &kp PAUSE_BREAK    &trans                &to FUN            &to MED            &kp RALT           &trans                \
                                       &kp K_APP          &kp SPC            &kp TAB            &trans                &trans             &trans                                          
 
                         >;

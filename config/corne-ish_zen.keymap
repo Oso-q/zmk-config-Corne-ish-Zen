@@ -78,7 +78,7 @@
                         label = "QWERTY";
                         bindings = <
 &kp Q              &kp W              &kp E              &kp R              &kp T              &kp Y              &kp U              &kp I              &kp O              &kp P              \
-&hm LSHFT A        &hm LCTRL S        &hm LALT D         &hm LGUI F         &kp G              &kp H              &hm LGUI J         &hm LALT K         &hm LCTL L         &hm LSHFT SQT       \
+&mt LSHFT A        &mt LCTRL S        &mt LALT D         &mt LGUI F         &kp G              &kp H              &mt LGUI J         &mt LALT K         &mt LCTL L         &mt LSHFT SQT       \
 &lt MOU Z          &lt MED X          &kp C              &kp V              &kp B              &kp N              &kp M              &kp COMMA          &lt FUN DOT        &lt SYM SLASH \
                                       &trans             &lt NAV BSPC       &lt NAV BSPC       &lt NUM SPC        &lt NUM SPC        &trans             
         >;
@@ -89,7 +89,7 @@ nav_layer {
 bindings = <
 &trans             &trans             &trans             &to BASE           &trans                &kp INS            &kp HOME           &kp UP             &kp END            &kp PG_UP          \
 &kp LGUI           &kp LALT           &kp LCTRL          &kp LSHFT          &trans                &trans             &kp LEFT           &kp DOWN           &kp RIGHT          &kp PG_DN          \
-&trans             &kp RALT           &to NUM            &to NAV            &trans                &K_REDO            &K_PASTE           &K_COPY            &K_CUT             &K_UNDO              \
+&trans             &kp RALT           &to NUM            &to NAV            &trans                &LC(Z)             &LC(X)             &LC(C)             &LC(V)             &LC(Y)               \
                                       &trans             &trans             &trans                &kp RET            &kp BSPC           &kp DEL                                                
         >;
                 };

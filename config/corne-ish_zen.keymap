@@ -17,14 +17,18 @@
 #define MED 5
 
 
-&mt {
-  flavor = "tap-preferred";
-  //tapping_term_ms = <250>;
-};
-
-&kscan0 {
-    debounce-period = <10>;
-};
+/ 
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
 
 
 #define COMBO(NAME, KEYPOS) \
@@ -78,7 +82,7 @@
                         label = "QWERTY";
                         bindings = <
 &kp Q              &kp W              &kp E              &kp R              &kp T              &kp Y              &kp U              &kp I              &kp O              &kp P              \
-&mt LSHFT A        &mt LCTRL S        &mt LALT D         &mt LGUI F         &kp G              &kp H              &mt LGUI J         &mt LALT K         &mt LCTL L         &mt LSHFT SQT       \
+&hm LSHFT A        &hm LCTRL S        &hm LALT D         &hm LGUI F         &kp G              &kp H              &hm LGUI J         &hm LALT K         &hm LCTL L         &hm LSHFT SQT       \
 &kp Z              &lt MED X          &kp C              &kp V              &kp B              &kp N              &kp M              &kp COMMA          &lt FUN DOT        &lt SYM SLASH \
                                       &trans             &lt NAV BSPC       &lt NAV BSPC       &lt NUM SPC        &lt NUM SPC        &trans             
         >;

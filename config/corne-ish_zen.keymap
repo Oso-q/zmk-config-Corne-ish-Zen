@@ -89,7 +89,7 @@ nav_layer {
 bindings = <
 &trans             &trans             &trans             &to BASE           &trans                &kp INS            &kp HOME           &kp UP             &kp END            &kp PG_UP          \
 &kp LGUI           &kp LALT           &kp LCTRL          &kp LSHFT          &trans                &trans             &kp LEFT           &kp DOWN           &kp RIGHT          &kp PG_DN          \
-&trans             &kp RALT           &to NUM            &to NAV            &trans                &LC(Z)             &LC(X)             &LC(C)             &LC(V)             &LC(Y)               \
+&trans             &kp RALT           &to NUM            &to NAV            &trans                &kp LC(Z)          &kp LC(X)          &kp LC(C)          &kp LC(V)          &kp LC(Y)               \
                                       &trans             &trans             &trans                &kp RET            &kp BSPC           &kp DEL                                                
         >;
                 };
@@ -117,7 +117,7 @@ bindings = <
                 function_layer {
                         label = "FUN";
                         bindings = < 
-&kp F12            &kp F7             &kp F8             &kp F9             &kp PSCRN          &trans                &to BASE          &trans             &trans             &trans         \
+&kp F12            &kp F7             &kp F8             &kp F9             &kp PSCRN          &trans                &to BASE           &trans             &trans             &trans         \
 &kp F11            &kp F4             &kp F5             &kp F6             &kp SLCK           &trans                &kp LSHFT          &kp LCTRL          &kp LALT           &kp LGUI           \
 &kp F10            &kp F1             &kp F2             &kp F3             &kp PAUSE_BREAK    &trans                &to FUN            &to MED            &kp RALT           &trans                \
                                       &kp K_APP          &kp SPC            &kp TAB            &trans                &trans             &trans                                          

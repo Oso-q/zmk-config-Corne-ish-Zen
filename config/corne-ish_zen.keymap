@@ -8,6 +8,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+
 #define BASE 0
 #define NAV 1
 #define NUM 2
@@ -20,52 +21,52 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <10 11>;
+            key-positions = <13 14>;
             bindings = <&kp ESC>;
         };
         combo_tab {
             timeout-ms = <50>;
-            key-positions = <11 12>;
+            key-positions = <14 15>;
             bindings = <&kp TAB>;
         };
         combo_delete {
             timeout-ms = <50>;
-            key-positions = <12 13>;
+            key-positions = <15 16>;
             bindings = <&kp DELETE>;
         };
         combo_backspace {
             timeout-ms = <50>;
-            key-positions = <16 17>;
+            key-positions = <19 20>;
             bindings = <&kp BSPC>;
         };
         combo_enter {
             timeout-ms = <50>;
-            key-positions = <18 19>;
+            key-positions = <21 22>;
             bindings = <&kp RET>;
         };
         combo_scln {
             timeout-ms = <50>;
-            key-positions = <17 18>;
+            key-positions = <19 20>;
             bindings = <&kp SCLN>;
         };
         combo_lpar {
             timeout-ms = <50>;
-            key-positions = <2 3>;
+            key-positions = <3 4>;
             bindings = <&kp LPAR>;
         };
         combo_rpar {
             timeout-ms = <50>;
-            key-positions = <6 7>;
+            key-positions = <7 8>;
             bindings = <&kp RPAR>;
         };
         combo_minus {
             timeout-ms = <50>;
-            key-positions = <1 2>;
+            key-positions = <2 3>;
             bindings = <&kp MINUS>;
         };
         combo_equal {
             timeout-ms = <50>;
-            key-positions = <7 8>;
+            key-positions = <8 9>;
             bindings = <&kp EQUAL>;
         };
 

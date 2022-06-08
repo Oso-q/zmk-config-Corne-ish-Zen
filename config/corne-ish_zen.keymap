@@ -97,25 +97,15 @@
 
                 default_layer {
                         label = "BASE";
-// -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
 &kp Q              &kp W              &kp E              &kp R              &kp T              &kp Y              &kp U              &kp I              &kp O              &kp P              
-&hm LSHFT A        &hm LCTRL S        &hm LALT D         &hm LGUI F         &kp G              &kp H              &hm LGUI J         &hm LALT K         &hm LCTL L         &hm LSHFT SQT       
+&hm LSHFT A        &hm LCTRL S        &hm LALT D         &hm LGUI F         &kp G              &kp H              &hm LGUI J         &hm LALT K         &hm LCTRL L         &hm LSHFT SQT       
 &kp Z              &lt MED X          &kp C              &kp V              &kp B              &kp N              &kp M              &kp COMMA          &lt FUN DOT        &lt SYM SLASH 
                                       &trans             &lt NAV BSPC       &lt NAV BSPC       &lt NUM SPC        &lt NUM SPC        &trans
                         >;
                 };
                 num_layer {
                         label = "NUM";
-// -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
 &kp LBKT           &kp NUM_7          &kp NUM_8          &kp NUM_9          &kp RBKT           &trans                &trans             &trans             &trans             &trans        
 &kp SEMI           &kp NUM_4          &kp NUM_5          &kp NUM_6          &kp EQL            &trans                &kp LGUI           &kp LCTRL          &kp LALT           &kp LSHFT            
@@ -126,11 +116,6 @@
 
                 sym_layer {
                         label = "SYM";
-// -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
 &kp LBRC           &kp AMPS           &kp ASTRK          &kp LPAR           &kp RBRC           &trans                &trans             &trans             &trans             &trans         
 &kp COLON          &kp DLLR           &kp PRCT           &kp CRRT           &kp PLUS           &trans                &kp LSHFT          &kp LCTRL          &kp LALT           &kp LGUI       
@@ -140,11 +125,6 @@
                 };
                 nav_layer {
                         label = "NAV";
-// -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
 &trans             &trans             &trans             &trans             &trans                &kp INS            &kp HOME           &kp UP             &kp END            &kp PG_UP          
 &kp LGUI           &kp LALT           &kp LCTRL          &kp LSHFT          &trans                &trans             &kp LEFT           &kp DOWN           &kp RIGHT          &kp PG_DN          
@@ -154,11 +134,6 @@
                 };        
                 fun_layer {
                         label = "FUN";
-// -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
 &kp F12            &kp F7             &kp F8             &kp F9             &kp PSCRN          &trans                &trans             &trans             &trans             &trans         
 &kp F11            &kp F4             &kp F5             &kp F6             &kp SLCK           &trans                &kp LSHFT          &kp LCTRL          &kp LALT           &kp LGUI       
@@ -168,11 +143,6 @@
                 };
                 med_layer {
                         label = "MED";
-// -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
 &trans             &trans             &trans             &trans             &trans                &trans             &trans             &trans             &trans             &trans	         
 &kp LGUI           &kp LALT           &kp LCTRL          &kp LSHFT          &trans                &bt BT_CLR         &kp C_PREV         &kp C_VOL_DN       &kp C_VOL_UP       &kp C_NEXT         

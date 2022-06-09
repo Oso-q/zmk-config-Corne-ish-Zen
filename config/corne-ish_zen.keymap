@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define BASE 0
-#define NAV 1
+#define NAVI 1
 #define NUM 2
 #define SYM 3
 #define FUN 4
@@ -124,7 +124,7 @@
                                       &kp LPAR           &kp RPAR           &kp UNDER          &trans                &trans             &trans                                          
                         >;
                 };
-                nav_layer {
+                navi_layer {
                       
                         bindings = <
 &trans &trans             &trans             &trans             &trans             &trans                &kp INS            &kp HOME           &kp UP             &kp END            &kp PG_UP    &trans       

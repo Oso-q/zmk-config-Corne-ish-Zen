@@ -59,6 +59,16 @@
             key-positions = <7 8>;
             bindings = <&kp RPAR>;
         };
+        combo_lbkt {
+            timeout-ms = <50>;
+            key-positions = <7 8>;
+            bindings = <&kp LBKT>;
+        };
+        combo_rbkt {
+            timeout-ms = <50>;
+            key-positions = <7 8>;
+            bindings = <&kp RBKT>;
+        };
         combo_minus {
             timeout-ms = <50>;
             key-positions = <2 3>;
